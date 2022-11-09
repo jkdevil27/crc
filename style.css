@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Anurati Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Anurati Regular'), url('Anurati-Regular.woff') format('woff');
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #181818;    
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+    background-color: inherit;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+}
+nav{
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+}
+nav a{
+    font-family: 'Anurati Regular';
+    letter-spacing: .5rem;
+    font: 2rem;
+}
+button{
+	background: none;
+	color: inherit;
+	border: 1px solid #fffafa;
+    border-radius: 15px 0 15px 0;
+    padding: 1rem;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    font-family: 'Roboto', sans-serif ;
+}
+button:hover{
+    border: 1px solid #fffafa83;
+    color: #fffafa;
+    opacity: .9;
+    transform: scale(1.05);
+}
+button:active{
+    border: 1px solid #fffafa33;
+    transform: scale(.95);
+}
+.head{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem 0;
+}
+.video{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+footer{
+    width: 100vw;
+    text-align: center;
+    bottom: 0;
+}
+
+footer p{
+    
+    padding: 1rem 0;
+    background-color: #121212;
+}
+footer a{
+    text-decoration: underline;
+}
+footer a:hover{
+    opacity: .7;
+    transform: scale(1.05);
+}
+footer a:active{
+    transform: scale(.95);
+}
+iframe {
+    /* border: .5px solid #fff;
+    padding: 1rem;
+    border-radius: 5px; */
+    width: 825px;   
+    height: 464px;
+    @media screen and (max-width: 1000px){ 
+      width: calc(84vw);
+      height: calc(47vw)
+    }  
+  }
+
